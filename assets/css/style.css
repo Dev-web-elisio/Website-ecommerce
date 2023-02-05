@@ -269,3 +269,23 @@ button {
     right: 1rem;
 }
 
+/* PRODUTOS */ 
+.produtos_container {
+    grid-template-columns: repeat(3 , 2fr);
+    column-gap: 2rem;
+    padding-top: 1rem;
+}
+
+.produtos_descricao {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+.produtos_descricao span {
+    font-size: 1.2rem;
+    color: #ff791f;
+}
+.produto_nome {
+    margin-top: 1rem;
+}
