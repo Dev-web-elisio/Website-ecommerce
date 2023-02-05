@@ -76,7 +76,7 @@ button {
     background-color: #f3f2f286;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
-    z-index: 1;
+    z-index: 10;
     width: 100%;
 }
 
@@ -188,6 +188,7 @@ button {
 .colecao_link {
     color: #ff791f;
     text-decoration: underline;
+    
 }
 
 .colecao_img {
@@ -203,3 +204,68 @@ button {
     position: absolute;
     transform: rotate(-10deg);
 }
+
+/* NOVIDADES */
+.novidade_section {
+    /* background: #f3f2f2; */
+    margin-top:  4rem;
+}
+
+.novidades_container {
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.novidades_card {
+    display: inline-flex;
+    column-gap: 2rem;
+}
+
+.novidades_subtitulo {
+    font-size: 1rem;
+    color: #ff791f;
+    margin-bottom: 0.5rem;
+}
+
+.novidades_titulo {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.novidade_descricao {
+    margin-bottom: 2rem;
+}
+
+.card {
+    position: relative;
+}
+
+.card_titulo {
+   padding-top: 1rem;
+}
+
+#card {
+    background: none;
+    border: 1px solid #121212;
+    color: #121212;
+    background-color: #fff2e086;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    
+}
+
+#arrow {
+    color: #3b3a3a;
+}
+
+.card1 {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.card2 {
+    position: absolute;
+    bottom: 4rem;
+    right: 1rem;
+}
+
