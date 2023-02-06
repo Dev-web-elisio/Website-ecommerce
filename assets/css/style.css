@@ -351,18 +351,6 @@ button {
  /*=============== BREAKPOINTS ===============*/
 /* PARA DISPOSITIVOS PEQUENOS */
 @media screen and (max-width: 320px){
- 
-
-  
-  }
-  
-  /* DESPOSITIVOS MEDIOS */
-  @media screen and (min-width: 576px){
-    .container{
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
     .nav_menu {
         display: none;
         position: fixed;
@@ -384,10 +372,31 @@ button {
     .nav_link {
         font-size: 1.2rem;
     }
+ 
+    
+
+  
+  }
+  
+  /* DESPOSITIVOS MEDIOS */
+  @media screen and (min-width: 576px){
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .home_texto {
+        padding-top: 9rem;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .home_descricao {
+        display: none;
+    }
     .colecao_titulo {
         font-size: 2rem;
     }
-    
     .colecao_img {
         width: 140px;
         right: 7rem;
