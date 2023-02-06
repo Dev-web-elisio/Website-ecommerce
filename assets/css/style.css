@@ -146,6 +146,18 @@ button {
     align-items: center;
 }
 
+.novidade_btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #292929;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .arrow {
     color: #fff;
     font-size: 1rem;
@@ -275,7 +287,15 @@ button {
     column-gap: 2rem;
     padding-top: 1rem;
 }
+.produtos_card_item {
+    position: relative;
+}
 
+.produto_btn {
+    position: absolute;
+    right: 1rem;
+    bottom: 3rem;
+}
 .produtos_descricao {
     display: inline-flex;
     justify-content: space-between;
@@ -286,6 +306,138 @@ button {
     font-size: 1.2rem;
     color: #ff791f;
 }
+
+
 .produto_nome {
     margin-top: 1rem;
 }
+
+/* NOVA COLECAO */
+.angry-grid {
+    position: relative;
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    height: 100%;
+ }
+   
+ #item-0 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+ }
+ #item-1 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3; 
+    width: 100%;
+    height: 100%;
+ }
+ #item-2 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+    
+ }
+
+
+
+
+ /* MEDIA QUERY */
+ /*=============== BREAKPOINTS ===============*/
+/* PARA DISPOSITIVOS PEQUENOS */
+@media screen and (max-width: 320px){
+ 
+
+  
+  }
+  
+  /* DESPOSITIVOS MEDIOS */
+  @media screen and (min-width: 576px){
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .nav_menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 30%;
+        background-color: #fffffff1;
+    }
+
+    .nav_lista {
+        flex-direction: column;
+        padding-top: 4rem;
+        margin-left: 2rem;
+        gap: 2rem;
+    }
+
+    .nav_link {
+        font-size: 1.2rem;
+    }
+    .colecao_titulo {
+        font-size: 2rem;
+    }
+    
+    .colecao_img {
+        width: 140px;
+        right: 7rem;
+    }
+
+    .colecao_img2 {
+        width: 120px;
+        left: 3rem;
+    }
+
+    .novidades_texto {
+        text-align: center;
+    }
+    .novidade_descricao {
+        margin-bottom: 1rem;
+    }
+    
+    .novidades_card {
+        padding-top: 3rem;
+    }
+
+    .novidades_container {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+    .novidades_btn {
+        margin: 0 auto;
+    }
+
+    .produtos_container  {
+        grid-template-columns: repeat(2 , 1fr);
+        row-gap: 2rem;
+    }
+
+    .card2 {
+        bottom: 5rem;
+    } 
+  
+  }
+  
+  @media screen and (min-width: 767px){
+   
+ 
+  }
+  
+  /* DESPOSITIVOS GRANDES */
+  @media screen and (min-width: 992px){
+ 
+  }
+  
+  @media screen and (min-width: 1200px){
+
+  }
