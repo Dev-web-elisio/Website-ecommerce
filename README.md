@@ -14,7 +14,7 @@ FONTES [https://fonts.google.com/] ubuntu
 
 
 ## BANCO DE DADOS DE FOTOGRAFIAS
-IMAGENS [https://unplash.com] / [https://pixel.com]
+IMAGENS [https://www.nike.com/pt] 
 
 
 # Esse site foi desenvolvido pelo [Elísio Augusto ] Dev Full Stack

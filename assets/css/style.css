@@ -313,34 +313,83 @@ button {
 }
 
 /* NOVA COLECAO */
+.nova_section {
+    padding-top: 4rem;
+}
 .angry-grid {
-    position: relative;
+    padding-top: 2rem;
     display: grid; 
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     height: 100%;
  }
-   
+
+ .nova_card {
+    position: relative;
+ }
+
+ .nova_titulo {
+    padding: 1rem;
+    font-size: 2rem;
+ }
+
+ .nova_titulo1 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+ }
+
+ .nova_button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #292929;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+#button1 {
+    bottom: 1rem;
+    right: 2rem;
+}
+
+#button2 {
+    right: 2rem;
+    top: 1rem;
+}
  #item-0 {
+    height: 440px;
     grid-row-start: 1;
     grid-column-start: 1;
     grid-row-end: 3;
     grid-column-end: 2;
+    background-image: url(../img/nova1.webp);
+    background-size: cover;
  }
  #item-1 {
     grid-row-start: 1;
     grid-column-start: 2;
     grid-row-end: 2;
     grid-column-end: 3; 
-    width: 100%;
-    height: 100%;
+    background-color: red;
+    background-image: url(../img/nova2.webp);
+    background-position: center;
+    background-size: cover;
  }
  #item-2 {
     grid-row-start: 2;
     grid-column-start: 2;
     grid-row-end: 3;
     grid-column-end: 3;
+    background-color: red;
+    background-image: url(../img/nova3.webp);
+    background-position: center;
+    background-size: cover;
     
  }
 
@@ -379,7 +428,7 @@ button {
   }
   
   /* DESPOSITIVOS MEDIOS */
-  @media screen and (min-width: 576px){
+  @media screen and (max-width: 576px){
     .container{
         margin-left: 1rem;
         margin-right: 1rem;

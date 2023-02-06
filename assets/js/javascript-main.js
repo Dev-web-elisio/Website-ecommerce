@@ -65,6 +65,6 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.home_titulo , .home_descricao , .home_button , .novidades_subtitulo, .novidades_titulo , .novidade_descricao , .novidade_btn`,{interval: 100})
-sr.reveal(`.colecao_titulo , .colecao_descricao , .colecao_link , .card` ,{interval: 100})
+sr.reveal(`.nova_card , .colecao_titulo , .colecao_descricao , .colecao_link , .card` ,{interval: 100})
 sr.reveal(`.produtos_card_item , .colecao_img2 , .colecao_img`,{origin: 'left'})
 sr.reveal(`.app_imagem , .questions__group2 `,{origin: 'right'})
