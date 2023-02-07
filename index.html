@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Website E-commerce Responsivo</title>
 </head>
@@ -14,7 +15,7 @@
     <!-- HEADER (cabeçalho) -->
     <header class="header">
         <nav class="nav container">
-            <div class="nav_menu">
+            <div class="nav_menu" id="nav-menu">
                 <ul class="nav_lista">
                     <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
                     <li class="nav_item"><a href="#home" class="nav_link">Shop</a></li>
@@ -26,12 +27,11 @@
                 <a href="#home" class="nav_link"><span>4f</span>WEARS</a>
             </div>
             <div class="nav_icones">
-                <i class="ri-search-line"></i>
-                <i class="ri-user-line"></i>
-                <i class="ri-shopping-bag-line"></i>
+                <i class="ri-user-line  nav_"></i>
+                <i class="ri-shopping-bag-line nav_"></i>
             </div>
-            <div class="nav_toggler">
-
+            <div class="nav_toggler" id="nav_toggler">
+                <i class="ri-menu-line"></i>
             </div>
         </nav>
     </header>
@@ -40,24 +40,17 @@
 
     <!-- HOME CONTAINER -->
     <div class="home" id="home">
-        <div class="home_container container">
-            <div class="home_texto">
-                <h1 class="home_titulo">Reflita como<br>Você está com<br>o seu <span>Estilo.</span></h1>
-                <div class="home_descricao">
-                    <p class="home_descricao">O poder de uma ótima roupa é impossível exagerar <br>
-                        Na sua melhor moda como capacidade de transformar sua identidade <br> de humor
-                        e, claro, o seu olhar. Pode ser divertido.
-                    </p>
-                    <a class="home_btn">
-                        <span href="#" class="arrow"><i class="ri-arrow-right-up-line"></i></span>
-                    </a>
-                </div>
+        <div class="home_container grid  container">
+            <div class="home_texto ">
+                <h1 class="home_titulo">Fashion<br> cloating <span>beatifull</span></h1>
+                <p class="home_descricao">Nós providenciamos as melhores <br>roupas para seus dias com
+                    diversos estilos<br> para diferentes ocasiões.</p>
+                <a class="home_btn"><span href="#" ><i class="ri-arrow-right-up-line "></i></span></a>
             </div>
 
-            <div>
-                <img src="assets/img/home_img.png" alt="" class="home_img">
-            </div>
+            
         </div>
+        <img src="assets/img/home_img.png" alt="" class="home_img">
     </div>
 
 
@@ -83,7 +76,7 @@
         <section class="section novidade_section">
             <div class="novidades_container grid container">
                 <div class="novidades_texto">
-                    <h2 class="novidades_subtitulo">What is new </h2>
+                    <h2 class="novidades_subtitulo">O que temos de novo</h2>
                     <h1 class="novidades_titulo">SweatsTsherts <br>Collection</h1>
                     <p class="novidade_descricao">Fashion is in the sky , in the street <br>fashion to do everthigs
                         that all you can do <br>becouse you are spacial and geet</p>
@@ -184,28 +177,42 @@
                 <div class="angry-grid">
                     <div id="item-0" class="nova_card">
                         <h1 class="nova_titulo">Casaco nike<br>casual</h1>
-                        <a href="#" class="nova_button" id="button1"><i class="ri-add-line"></i></a>                         
-                    </div>           
-                
+                        <a href="#" class="nova_button" id="button1"><i class="ri-add-line"></i></a>
+                    </div>
+
                     <div id="item-1" class="nova_card">
                         <h1 class="nova_titulo">Barcelona <br>equipe 2023</h1>
-                        <a href="#" class="nova_button"id="button2" ><i class="ri-add-line"></i></a>
+                        <a href="#" class="nova_button" id="button2"><i class="ri-add-line"></i></a>
                     </div>
                     <div id="item-2" class="nova_card">
                         <h1 class="nova_titulo1">Modelo <br>dourado</h1>
                         <a href="#" class="nova_button" id="button2"><i class="ri-add-line"></i></a>
-                   </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- O QUE OS CLIENTES DIZEM -->
-        
+        <section class="section pessoas_section">
 
 
-        
+        </section>
+
+
+
+
     </main>
+
+
+    <!-- SCROLLUP -->
+    <div class="scrollUp" id="scroll-up">
+        <a href="#home" class="scroll">
+            <span><i class="ri-arrow-up-s-line"></i></span>
+        </a>
+    </div>
+
     <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
     <script src="assets/js/javascript-main.js"></script>
 </body>
 

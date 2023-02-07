@@ -1,3 +1,16 @@
+/* MENU MOBILE*/
+const ShowMenu = (togglerId , navId) => {
+    const toggle = document.getElementById(togglerId),
+    nav = document.getElementById(navId);
+    if(toggle && nav) {
+        toggle.addEventListener('click', () => {
+              nav.classList.add('show');
+        })
+    }
+}
+ 
+ShowMenu('scroll-up' , 'nav-menu');
+
 
 // Função Header Para mudar a cor do cabeçalho
 function scroll() {
@@ -11,46 +24,14 @@ function scroll() {
 window.addEventListener('scroll', scroll)
 
 
-
-function scrollUp(){
+// ScrollUp se a barra de rolagem for maior que 200 adiciona a classe show-scroll
+function mostrarScroll(){
     const scrollUp = document.getElementById('scroll-up');
-    // When the scroll is higher than 200 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 200) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+    if(this.scrollY >= 200) 
+        scrollUp.classList.add('show-scroll'); 
+    else scrollUp.classList.remove('show-scroll')
 }
-window.addEventListener('scroll', scrollUp)
-
-// Faqs esconder 
-const accordionItems = document.querySelectorAll('.questions__item')
-
-accordionItems.forEach((item) =>{
-    const accordionHeader = item.querySelector('.questions__header')
-
-    accordionHeader.addEventListener('click', () =>{
-        const openItem = document.querySelector('.accordion-open')
-
-        toggleItem(item)
-
-        if(openItem && openItem!== item){
-            toggleItem(openItem)
-        }
-    })
-})
-
-const toggleItem = (item) =>{
-    const accordionContent = item.querySelector('.questions__content')
-
-    if(item.classList.contains('accordion-open')){
-        accordionContent.removeAttribute('style')
-        item.classList.remove('accordion-open')
-    }else{
-        accordionContent.style.height = accordionContent.scrollHeight + 'px'
-        item.classList.add('accordion-open')
-    }
-
-}
-
-
-
+window.addEventListener('scroll', mostrarScroll)
 
 
 
@@ -67,4 +48,4 @@ const sr = ScrollReveal({
 sr.reveal(`.home_titulo , .home_descricao , .home_button , .novidades_subtitulo, .novidades_titulo , .novidade_descricao , .novidade_btn`,{interval: 100})
 sr.reveal(`.nova_card , .colecao_titulo , .colecao_descricao , .colecao_link , .card` ,{interval: 100})
 sr.reveal(`.produtos_card_item , .colecao_img2 , .colecao_img`,{origin: 'left'})
-sr.reveal(`.app_imagem , .questions__group2 `,{origin: 'right'})
+sr.reveal(``,{origin: 'right'})
