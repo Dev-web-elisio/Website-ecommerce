@@ -116,7 +116,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3rem;
+    height: 4rem;
 }
 
 .nav_toggler {
@@ -140,13 +140,21 @@ html {
 
 
 .show {
-    background: red;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.mudar-cor {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background: #f8f5f1;
+
 }
 /* HOME CONTAINER */
 .home {
     position: relative;
     height: 100vh;
     background-color: #f3f2f2;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+
 }
 
 
@@ -166,7 +174,41 @@ html {
    margin-bottom: 3rem;
 }
 
+.home_card {
+    position: absolute;
+    bottom: 5rem;
+    right: 14rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 85px;
+    background-color: #b3b3b370;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+.home_card-icone {
+    background: #ff791f;
+    cursor: pointer;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #f3f2f2;
+    font-size: 1.2rem;
+}
 
+.home_card-span {
+    font-size: 1.4rem;
+    padding-left: 2.1rem;
+    color: #f3f2f2;
+}
+
+.home_card-paragrafo {
+    font-size: .876rem;
+    color: #ffecdf;
+}
 .home_btn {
     width: 50px;
     height: 50px;
@@ -426,22 +468,7 @@ html {
 
 
 /* PESSOAS */
-.pessoas_section {
-    background-color: #161614;
-}
-.pessoas_texto {
-    text-align: center;
-}
-.pessoas_titulo {
-    font-size: 2.5rem;
-    color: #f3f2f2;
-}
 
-.pessoas_subtitulo {
-    font-size: 1rem;
-    color: #ff791f;
-    margin-bottom: .5rem;
-}
  /* MEDIA QUERY */
  /*=============== BREAKPOINTS ===============*/
 /* PARA DISPOSITIVOS PEQUENOS */
